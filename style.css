@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* p {
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+input {
+  padding: 10px;
+}
+
+.input-error {
+  border: 2px solid hsl(0, 100%, 67%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+}
+body .container {
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  margin: 5rem 0;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 7rem 1rem;
+}
+body .input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .input-section form .input-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body .input-section form .input-fields .input {
+  display: flex;
+  flex-direction: column;
+}
+body .input-section form .input-fields .input label {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+body .input-section form .input-fields .input .label-error {
+  color: hsl(0, 100%, 67%);
+}
+body .input-section form .input-fields .input input {
+  font-weight: 700;
+  font-size: 20px;
+  width: 50%;
+  margin: 5px 10px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+body .input-section form .input-fields .input input:focus {
+  outline: 0.5px solid  hsl(259, 100%, 65%);
+}
+body .input-section form .input-fields .input input:focus-visible {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+body .input-section form .input-fields .input small {
+  margin: px 10px;
+  color: hsl(0, 100%, 67%);
+}
+body .input-section form .input-fields .input .input-error {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+body .input-section form .pattern {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+body .input-section form .pattern hr {
+  flex: 5;
+}
+body .input-section form .pattern input {
+  background-image: url(./assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+body .input-section form .pattern input:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+body .output-section .output {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+body .output-section .output .figure {
+  color: hsl(259, 100%, 65%);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 560px) {
+  body .container {
+    width: 95%;
+    margin: 4rem auto;
+    padding: 1rem;
+  }
+  body .input-section form .input-fields .input input {
+    width: 90%;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  body .input-section form .input-fields .input small {
+    font-size: 8px;
+  }
+  body .input-section form .pattern {
+    margin: 3rem 0;
+  }
+  body .input-section form .pattern input {
+    position: absolute;
+    right: 40%;
+  }
+  body .output-section {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  body .output-section .output .figure {
+    font-size: 4rem;
+    margin-right: 0.5rem;
+  }
+  body .output-section .output h1 {
+    font-size: 3rem;
+  }
+}
