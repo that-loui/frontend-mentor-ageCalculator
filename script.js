@@ -39,13 +39,13 @@ function checkInputValue(input, errorElement, label) {
   if (input.value == '') {
     errorElement.textContent = 'This field is required';
     input.classList.add('input-error');
-    label.classList.add('label-error')
-    return false; 
+    label.classList.add('label-error');
+    return false;
   } else {
     errorElement.textContent = '';
     input.classList.remove('input-error');
-    label.classList.add
-    return true; 
+    label.classList.add;
+    return true;
   }
 }
 // function to ensure that the input are accurate and to output errors when necessary
@@ -84,8 +84,12 @@ function checkInputDate(
     dayLabel.classList.remove('label-error');
   }
   // check that the year is not in the future
-  if (year.value > currentDate.getFullYear()) {
-    yearError.textContent = 'Must be in the past';
+  if (year.value > currentDate.getFullYear() || year.value < 1) {
+    if (year.value < 1) {
+      yearError.textContent = 'Must be a valid year';
+    } else {
+      yearError.textContent = 'Must be in the past';
+    }
     year.classList.add('input-error');
     yearLabel.classList.add('label-error');
     return false;

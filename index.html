@@ -20,25 +20,44 @@
       <section class="input-section">
         <form action="post">
           <div class="input-fields">
-            <div class=" input day-cont">
+            <div class="input day-cont">
               <label for="day" class="labelDay">DAY</label>
-              <input type="number" name="day" id="day" placeholder="DD" />
+              <input
+                type="number"
+                name="day"
+                id="day"
+                placeholder="DD"
+                maxlength="2"
+              />
               <small class="date-error"></small>
             </div>
             <div class="input month-cont">
               <label for="month" class="labelMonth">MONTH</label>
-              <input type="number" name="month" id="month" placeholder="MM" class="month" />
+              <input
+                type="number"
+                name="month"
+                id="month"
+                placeholder="MM"
+                class="month"
+                maxlength="2"
+              />
               <small class="month-error"></small>
             </div>
             <div class="input year-cont">
               <label for="year" class="labelYear">YEAR</label>
-              <input type="number" name="year" id="year" placeholder="YYYY" />
+              <input
+                type="number"
+                name="year"
+                id="year"
+                placeholder="YYYY"
+                maxlength="4"
+              />
               <small class="year-error"></small>
             </div>
           </div>
           <div class="pattern">
             <hr />
-            <input type="submit" value="" class="calculateBtn"/>
+            <input type="submit" value="" class="calculateBtn" />
           </div>
         </form>
       </section>
