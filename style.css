@@ -73,7 +73,7 @@ body .input-section form .input-fields .input input {
   border-radius: 5px;
 }
 body .input-section form .input-fields .input input:focus {
-  outline: 0.5px solid  hsl(259, 100%, 65%);
+  outline: 1px solid hsl(259, 100%, 65%);
 }
 body .input-section form .input-fields .input input:focus-visible {
   border: 1px solid hsl(259, 100%, 65%);
